@@ -1,0 +1,124 @@
+
+<!DOCTYPE html>
+
+    <head>
+        <meta name="viewport" content="with=device-width, initial-scale=1.0">
+
+        <title>Cat-Fein.Cafe</title>
+
+        <!-- Load external CSS styles -->
+        <link rel="stylesheet" href="styles.css">
+
+        <!--------External Fonts------->
+       <link rel="preconnect" href="https://fonts.googleapis.com">
+       <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+       <link href="https://fonts.googleapis.com/css2?family=Noto+Serif&family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+       <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+
+    <body>
+        <!---Navigation---->
+        <section class="sub-header">
+        <nav>
+          <a href="index.html"><img src="aalogo.png" alt=""></a>
+            <div class="nav-links" id="navLinks">
+               <i class="fa fa-window-close" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="aboutus.html">ABOUT</a></li>
+                    <li><a href="information.html">INFORMATION HUB</a></li>
+                    <li><a href="gallery.html">GALLERY</a></li>
+                    <li><a href="contactus.html">CONTACT US</a></li>
+                </ul>
+            </div>
+               <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+                               <h1> GALLERY </h1>
+        </section>
+
+
+
+    
+        <!------------ Equipments ------------>
+        <section class="preparation">
+           <h1>Explores Us</h1>
+               <p>Hover Your Mouse To View</p>
+    
+         <div class="row">
+          <div class="preparation-col">
+            <img src="aasubheader5.jpg">
+            <div class="layer">
+            <h3>MATCHA COFFEE</h3>
+            </div>
+          </div>
+          <div class="preparation-col">
+            <img src="bbGallery2.jpg">
+            <div class="layer">
+            <h3>MATCHA CAKE</h3>
+            </div>
+          </div>
+          <div class="preparation-col">
+            <img src="bbGallery1.jpg">
+            <div class="layer">
+           <h3>MATCHA ICE TEA</h3>
+            </div>
+          </div>
+         </div>
+        </section> 
+
+
+<br>
+
+
+ <!--------------Footer--------------->
+              <div class="footer">
+            <div class="container footer_container">
+
+                <div class="footer_1">
+                    <a href="index.html" class="footer_logo"><h4>Cat-Fein</h4></a>
+                    <p>
+                        Welcome to Cat-Fein Website! Catfeine is your go-to sanctuary for warmth, whiskers, and world-class coffee. Catfeine offers a unique experience where customers can relax, sip their favorite drinks, and interact with adoptable rescue cats in a safe, relaxing environment
+                    </p>
+                </div>
+
+                <div class="footer_2">
+                    <h4>Visit Us</h4>
+                    <ul class="permalinks">
+                        <li><a href="index.html">Facebook</a></li>
+                        <li><a href="aboutus.html">Instagram</a></li>
+                        <li><a href="information.html">Twitter</a></li>
+                        <li><a href="contactus.html">TikTok</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer_3">
+                    <h4>Contact Us</h4>
+                        <p>+00 000 000 0000</p>
+                        <p>catfein@gmail.com</p>
+
+                </div>
+
+            </div>
+        </div>
+
+                <div class="footer__copyright">
+                    <small>Copyright &copy; Cat-Fein </small>
+                </div>
+
+    </body>
+
+<br>
+
+    <!-- Load external JavaScript -->
+        <script src="scripts.js">
+        var navLinks = document.getElementById("navLinks");
+        function showMenu(){
+            navLinks.style.right = "0";
+        }
+        function hideMenu(){
+            navLinks.style.right = "-200px";
+        }
+    </script>
+
+</html>
+

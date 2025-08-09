@@ -1,0 +1,589 @@
+
+<!DOCTYPE html>
+
+    <head>
+        <meta name="viewport" content="with=device-width, initial-scale=1.0">
+
+        <title>Cat-Fein.Cafe</title>
+
+        <!-- Load external CSS styles -->
+        <link rel="stylesheet" href="styles.css">
+
+        <!--------External Fonts------->
+       <link rel="preconnect" href="https://fonts.googleapis.com">
+       <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+       <link href="https://fonts.googleapis.com/css2?family=Noto+Serif&family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+       <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+       <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet" />
+
+    </head>
+
+    <body>
+        <section class="sub-header">
+		
+
+			
+	<!---Navigation---->
+        <nav>
+          <a href="index.html"><img src="aalogo.png" alt=""></a>
+            <div class="nav-links" id="navLinks">
+               <i class="fa fa-window-close" onclick="hideMenu()"></i>    
+              
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="aboutus.html">ABOUT</a></li>
+                    <li><a href="menu.html">MENU</a></li>
+                    <li><a href="information.html">INFORMATION</a></li>
+                    <li><a href="contactus.html">CONTACT US</a></li>
+                    <li class="cart-icon">
+						<i class="ri-shopping-bag-line"></i>
+						<span class="cart-item-count">0</span>
+  </li>
+
+
+                </ul>
+            </div>
+               <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+                               <h1> Menu </h1>
+        </section>
+
+<!-----Cart----->
+<div class="cart"> 
+	<h2 class="cart-title">Your Cart</h2>
+	<div class="cart-content">
+		<!-- <div class="cart-box">
+			<img src="aaMenuPastry1.png" class="cart-img">
+			<div class="cart-detail">
+				<h2 class="cart-product-title">Bread Name 1</h2>
+				<span class="cart-price"> ₱100 </span>
+				<div class="cart-quantity">
+					<button id="decrement">-</button>
+					<span class="number">1</span>
+					<button id="increment">+</button>
+				</div>
+			</div>
+			<i class="ri-delete-bin-line cart-remove"></i>
+		</div> --> 
+	</div>
+	<div class="total">
+		<div class="total-title">Total</div>
+		<div class="total-price">₱0.00</div>
+	</div>
+	<button class="btn-buy">Buy Now</button>
+	<i class="ri-close-line" id="cart-close"></i>
+</div>
+	
+
+
+        <!----Information---->
+        <section class="preparation">
+        <section class="course">
+            <h1> PASTRY </h1>
+            <p>Your Perfect Bite Starts Here</p>
+            
+            <div class="row">
+            <div class="container courses_container">
+				
+                <article class="course">
+				<div class="product-box"> 
+                    <div class="course1">
+                    <div class="course__image">
+                        <img src="aCroissant.png" class="cart-img">
+                    </div>
+                    <div class="course_info">
+                    <h4 class="product-title"> Croissant Claw </h4>
+                    <p> Flaky, buttery croissant dough shaped into a claw and filled with 
+                    sweet almond paste. Lightly crisped and topped with a dusting of powdered sugar </p>  
+                    <span class="price">₱100</span>
+                    <button class="hero-btn red-btn add-cart"> BUY NOW </button>
+                    </div>
+                    </div>
+                </div>
+                </article>
+                <article class="course">
+				<div class="product-box"> 
+                    <div class="course2">
+                    <div class="course__image">
+                        <img src="aPretzel.png" class="cart-img">
+                    </div>
+                    <div class="course_info">
+                    <h4 class="product-title"> Purrtzel </h4>
+                    <p> A soft, golden-baked pretzel with a playful twist! 
+                    Perfectly chewy with a touch of sea salt, served warm and purr-fectly satisfying. </p>  
+                    <span class="price">₱100</span>
+                    <button class="hero-btn red-btn add-cart"> BUY NOW </button>
+                    </div>
+                    </div>
+                </div>
+                </article>
+                <article class="course">
+				<div class="product-box"> 
+                    <div class="course2">
+                    <div class="course__image">
+                        <img src="aDoughnut.png" class="cart-img">
+                    </div>
+                    <div class="course_info">
+                    <h4 class="product-title"> Dough-Meownut</h4>
+                    <p> A fluffy, cat-shaped donut that's purrfectly sweet! Glazed to perfection and baked 
+                    (or fried) with love—every bite is a treat worth purring over. </p>  
+                    <span class="price">₱95</span>
+                    <button class="hero-btn red-btn add-cart"> BUY NOW </button>
+                    </div>
+                    </div>
+                </div>
+                </article>
+                
+                </div>
+               </div>
+              </div>
+ 
+		            
+            <div class="row">
+            <div class="container courses_container">
+				
+                <article class="course">
+				<div class="product-box"> 
+                    <div class="course1">
+                    <div class="course__image">
+                        <img src="aCreamPuff.png" class="cart-img">
+                    </div>
+                    <div class="course_info">
+                    <h4 class="product-title"> Cream Pawff </h4>
+                    <p>Cream Pawff – Light, airy pastry filled with silky vanilla cream and dusted with powdered sugar. A playful take on the
+                     classic cream puff with a paw-sitively irresistible finish! </p>  
+                    <span class="price">₱95</span>
+                    <button class="hero-btn red-btn add-cart"> BUY NOW </button>
+                    </div>
+                    </div>
+                </div>
+                </article>
+                <article class="course">
+				<div class="product-box"> 
+                    <div class="course2">
+                    <div class="course__image">
+                        <img src="aMuffin.png" class="cart-img">
+                    </div>
+                    <div class="course_info">
+                    <h4 class="product-title"> Muffin Whiskers </h4>
+                    <p> A soft, fluffy muffin bursting with flavor and charm! Baked to golden purrfection with a hint of 
+                    sweetness and just the right amount of mischief in every bite. Topped with a whisker twirl. </p>  
+                    <span class="price">₱100</span>
+                    <button class="hero-btn red-btn add-cart"> BUY NOW </button>
+                    </div>
+                    </div>
+                </div>
+                </article>
+                <article class="course">
+				<div class="product-box"> 
+                    <div class="course2">
+                    <div class="course__image">
+                        <img src="aBiscotti.png" class="cart-img">
+                    </div>
+                    <div class="course_info">
+                    <h4 class="product-title"> Catnip Biscotti</h4>
+                    <p> A crunchy, twice-baked treat infused with a hint of minty freshness (don’t worry, it’s human-friendly!). Perfect for dipping in your 
+                    favorite coffee or tea—sure to make you purr with every bite. </p>  
+                    <span class="price">₱125</span>
+                    <button class="hero-btn red-btn add-cart"> BUY NOW </button>
+                    </div>
+                    </div>
+                </div>
+                </article>
+                
+                </div>
+               </div>
+              </div>
+                                
+
+
+            <div class="row">
+            <div class="container courses_container">
+				
+                <article class="course">
+				<div class="product-box"> 
+                    <div class="course1">
+                    <div class="course__image">
+                        <img src="aTunaTart.png" class="cart-img">
+                    </div>
+                    <div class="course_info">
+                    <h4 class="product-title"> Tuna Tart </h4>
+                    <p>A crisp tart shell filled with a savory blend of seared tuna, creamy avocado, fresh herbs, and a hint of citrus. Light, flavorful, and perfect for any time! </p>  
+                    <span class="price">₱125</span>
+                    <button class="hero-btn red-btn add-cart"> BUY NOW </button>
+                    </div>
+                    </div>
+                </div>
+                </article>
+                <article class="course">
+				<div class="product-box"> 
+                    <div class="course2">
+                    <div class="course__image">
+                        <img src="aNachos.png" class="cart-img">
+                    </div>
+                    <div class="course_info">
+                    <h4 class="product-title"> Cat-Cho Supreme </h4>
+                    <p>  Crunchy nachos loaded with gooey melted cheese, zesty jalapeños, 
+                    and a bold kick of flavor. A spicy, cheesy snack that’s perfect for sharing (or not!). </p>  
+                    <span class="price">₱135</span>
+                    <button class="hero-btn red-btn add-cart"> BUY NOW </button>
+                    </div>
+                    </div>
+                </div>
+                </article>
+                <article class="course">
+				<div class="product-box"> 
+                    <div class="course2">
+                    <div class="course__image">
+                        <img src="aStick.png" class="cart-img">
+                    </div>
+                    <div class="course_info">
+                    <h4 class="product-title"> Meowzzarella Sticks </h4>
+                    <p> Golden-fried mozzarella sticks with a crispy coating and a gooey cheese center, served with a side of tangy marinara sauce. A purr-fectly cheesy treat!. </p>  
+                    <span class="price">₱120</span>
+                    <button class="hero-btn red-btn add-cart"> BUY NOW </button>
+                    </div>
+                    </div>
+                </div>
+                </article>
+                
+                </div>
+               </div>
+              </div>
+                              
+		            
+            <div class="row">
+            <div class="container courses_container">
+				
+                <article class="course">
+				<div class="product-box"> 
+                    <div class="course1">
+                    <div class="course__image">
+                        <img src="aTuna.png" class="cart-img">
+                    </div>
+                    <div class="course_info">
+                    <h4 class="product-title"> Tuna Bites </h4>
+                    <p>Bite-sized sandwiches filled with a creamy tuna mix, fresh herbs, and a hint of zest, all tucked into soft mini buns. Small in size, big on flavor! </p>  
+                    <span class="price">₱125</span>
+                    <button class="hero-btn red-btn add-cart"> BUY NOW </button>
+                    </div>
+                    </div>
+                </div>
+                </article>
+                <article class="course">
+				<div class="product-box"> 
+                    <div class="course2">
+                    <div class="course__image">
+                        <img src="aChicken.png" class="cart-img">
+                    </div>
+                    <div class="course_info">
+                    <h4 class="product-title"> Purrcorn Chicken </h4>
+                    <p> Crispy, golden popcorn chicken bites seasoned to perfection. Juicy on the inside, crunchy on the outside – a claw-some snack for any time of day! </p>  
+                    <span class="price">₱135</span>
+                    <button class="hero-btn red-btn add-cart"> BUY NOW </button>
+                    </div>
+                    </div>
+                </div>
+                </article>
+                <article class="course">
+				<div class="product-box"> 
+                    <div class="course2">
+                    <div class="course__image">
+                        <img src="aFries.png" class="cart-img">
+                    </div>
+                    <div class="course_info">
+                    <h4 class="product-title"> Furrball Fries </h4>
+                    <p> A generous serving of crispy golden fries, lightly seasoned and perfect for dipping or sharing. Simple, tasty, and totally paw-some! </p>
+                    <span class="price">₱100</span>
+                    <button class="hero-btn red-btn add-cart"> BUY NOW </button>
+                    </div>
+                    </div>
+                </div>
+                </article>
+                
+                </div>
+               </div>
+              </div>
+                                
+
+                                
+                                
+<br>
+<br>
+<br>
+<br>
+
+                
+                
+ <!--------------------Drinks------------------------------------>
+        <h2>DRINKS</h2>
+        <p>Time To Treat Yourself~</p>
+        
+            <div class="row">
+            <div class="container courses_container">
+				
+                <article class="course">
+				<div class="product-box"> 
+                    <div class="course1">
+                    <div class="course__image">
+                        <img src="aMeowcha.png" class="cart-img">
+                    </div>
+                    <div class="course_info">
+                    <h4 class="product-title"> Meowcha </h4>
+                    <p>A bold fusion of earthy matcha and robust espresso—green meets bean in every sip.</p>
+                    <span class="price">₱135</span>
+                    <button class="hero-btn red-btn add-cart"> BUY NOW </button>
+                    </div>
+                    </div>
+                </div>
+                </article>
+                <article class="course">
+				<div class="product-box"> 
+                    <div class="course2">
+                    <div class="course__image">
+                        <img src="aPurrberry.png" class="cart-img">
+                    </div>
+                    <div class="course_info">
+                    <h4 class="product-title"> Purrberry Milk </h4>
+                    <p> Sweet strawberry milk that’s berry delicious—pink, playful, and totally purr-worthy. </p>  
+                    <span class="price">₱100</span>
+                    <button class="hero-btn red-btn add-cart"> BUY NOW </button>
+                    </div>
+                    </div>
+                </div>
+                </article>
+                <article class="course">
+				<div class="product-box"> 
+                    <div class="course2">
+                    <div class="course__image">
+                        <img src="aMeowchaLatte.png" class="cart-img">
+                    </div>
+                    <div class="course_info">
+                    <h4 class="product-title"> Meowcha Latte </h4>
+                    <p> Smooth and velvety with earthy matcha and creamy milk—green, serene, and dreamy. </p>  
+                    <span class="price">₱125</span>
+                    <button class="hero-btn red-btn add-cart"> BUY NOW </button>
+                    </div>
+                    </div>
+                </div>
+                </article>
+                
+                </div>
+               </div>
+              </div>
+                              
+		            
+            <div class="row">
+            <div class="container courses_container">
+				
+                <article class="course">
+				<div class="product-box"> 
+                    <div class="course1">
+                    <div class="course__image">
+                        <img src="aTea.png" class="cart-img">
+                    </div>
+                    <div class="course_info">
+                    <h4 class="product-title"> Chamomeowmile </h4>
+                    <p> A calming herbal infusion to help you unwind—floral, soft, and soothing.</p>  
+                    <span class="price">₱100</span>
+                    <button class="hero-btn red-btn add-cart"> BUY NOW </button>
+                    </div>
+                    </div>
+                </div>
+                </article>
+                <article class="course">
+				<div class="product-box"> 
+                    <div class="course2">
+                    <div class="course__image">
+                        <img src="aMoonpaw.png" class="cart-img">
+                    </div>
+                    <div class="course_info">
+                    <h4 class="product-title"> Moonpaw Milk </h4>
+                    <p> A magical blend of pastel-colored milk—sweet, chilled, and dreamy like moonlight. </p>  
+                    <span class="price">₱135</span>
+                    <button class="hero-btn red-btn add-cart"> BUY NOW </button>
+                    </div>
+                    </div>
+                </div>
+                </article>
+                <article class="course">
+				<div class="product-box"> 
+                    <div class="course2">
+                    <div class="course__image">
+                        <img src="aCold.png" class="cart-img">
+                    </div>
+                    <div class="course_info">
+                    <h4 class="product-title"> Cold Brew Hiss </h4>
+                    <p> Slow-steeped cold brew with a sharp kick—smooth, bold, and full of attitude. </p>
+                    <span class="price">₱125</span>
+                    <button class="hero-btn red-btn add-cart"> BUY NOW </button>
+                    </div>
+                    </div>
+                </div>
+                </article>
+                
+                </div>
+               </div>
+              </div>
+                                
+
+            <div class="row">
+            <div class="container courses_container">
+				
+                <article class="course">
+				<div class="product-box"> 
+                    <div class="course1">
+                    <div class="course__image">
+                        <img src="aEspresso.png" class="cart-img">
+                    </div>
+                    <div class="course_info">
+                    <h4 class="product-title"> Espurresso </h4>
+                    <p>Bold and classic—just a shot of pure, rich espresso to perk you right up. </p>  
+                    <span class="price">₱95</span>
+                    <button class="hero-btn red-btn add-cart"> BUY NOW </button>
+                    </div>
+                    </div>
+                </div>
+                </article>
+                <article class="course">
+				<div class="product-box"> 
+                    <div class="course2">
+                    <div class="course__image">
+                        <img src="aCatpuccino.png" class="cart-img">
+                    </div>
+                    <div class="course_info">
+                    <h4 class="product-title"> Catpucinno </h4>
+                    <p>  Purrfectly balanced espresso with foamy milk—strong, smooth, and a little sassy. </p>  
+                    <span class="price">₱125</span>
+                    <button class="hero-btn red-btn add-cart"> BUY NOW </button>
+                    </div>
+                    </div>
+                </div>
+                </article>
+                <article class="course">
+				<div class="product-box"> 
+                    <div class="course2">
+                    <div class="course__image">
+                        <img src="aFluffyLatte.png" class="cart-img">
+                    </div>
+                    <div class="course_info">
+                    <h4 class="product-title"> Fluffy Latte </h4>
+                    <p> A cloud of creamy steamed milk over smooth espresso—light, warm, and comforting. </p>  
+                    <span class="price">₱120</span>
+                    <button class="hero-btn red-btn add-cart"> BUY NOW </button>
+                    </div>
+                    </div>
+                </div>
+                </article>
+                
+                </div>
+               </div>
+              </div>
+                              
+		            
+            <div class="row">
+            <div class="container courses_container">
+				
+                <article class="course">
+				<div class="product-box"> 
+                    <div class="course1">
+                    <div class="course__image">
+                        <img src="aChoco.png" class="cart-img">
+                    </div>
+                    <div class="course_info">
+                    <h4 class="product-title"> Choco-Meowcha </h4>
+                    <p> Chocolate and espresso come together in a cozy hug—rich, mocha goodness with a feline flair. </p>  
+                    <span class="price">₱125</span>
+                    <button class="hero-btn red-btn add-cart"> BUY NOW </button>
+                    </div>
+                    </div>
+                </div>
+                </article>
+                <article class="course">
+				<div class="product-box"> 
+                    <div class="course2">
+                    <div class="course__image">
+                        <img src="aVanillaPawcino.png" class="cart-img">
+                    </div>
+                    <div class="course_info">
+                    <h4 class="product-title"> Vanilla Pawcino </h4>
+                    <p> Chilled coffee blended with vanilla for a sweet, creamy treat with a cool cat twist. </p>  
+                    <span class="price">₱135</span>
+                    <button class="hero-btn red-btn add-cart"> BUY NOW </button>
+                    </div>
+                    </div>
+                </div>
+                </article>
+                <article class="course">
+				<div class="product-box"> 
+                    <div class="course2">
+                    <div class="course__image">
+                        <img src="aMallow.png" class="cart-img">
+                    </div>
+                    <div class="course_info">
+                    <h4 class="product-title"> Mallow Meow </h4>
+                    <p> Creamy coffee with toasted marshmallow flavor—like a campfire cuddle in a cup. </p>
+                    <span class="price">₱100</span>
+                    <button class="hero-btn red-btn add-cart"> BUY NOW </button>
+                    </div>
+                    </div>
+                </div>
+                </article>
+                
+                </div>
+               </div>
+              </div>
+                                
+
+    
+        </section> 
+        </section>   
+
+
+
+
+
+
+ <!--------------Footer--------------->
+              <div class="footer">
+            <div class="container footer_container">
+
+                <div class="footer_1">
+                    <a href="index.html" class="footer_logo"><h4>Cat-Fein</h4></a>
+                    <p>
+                        Welcome to Cat-Fein Website! Catfeine is your go-to sanctuary for warmth, whiskers, and world-class coffee. Catfeine offers a unique experience where customers can relax, sip their favorite drinks, and interact with adoptable rescue cats in a safe, relaxing environment
+                    </p>
+                </div>
+
+                <div class="footer_2">
+                    <h4>Visit Us</h4>
+                    <ul class="permalinks">
+                        <li><a href="">Facebook</a></li>
+                        <li><a href="">Instagram</a></li>
+                        <li><a href="">Twitter</a></li>
+                        <li><a href="">TikTok</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer_3">
+                    <h4>Contact Us</h4>
+                        <p>+00 000 000 0000</p>
+                        <p>catfein@gmail.com</p>
+
+                </div>
+
+            </div>
+        </div>
+
+                <div class="footer__copyright">
+                    <small>Copyright &copy; Cat-Fein </small>
+                </div>
+
+			        <script src="script.js"> </script>
+
+    </body>
+    
+    <!-- Load external JavaScript -->
+
+
+</html>
